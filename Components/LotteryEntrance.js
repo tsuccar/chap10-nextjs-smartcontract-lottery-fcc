@@ -15,9 +15,10 @@ export default function LotteryEntrance() {
     // These get re-rendered every time due to our connect button!
     // The reason Moralis know what chain we are on is, in our "Header" component, The Header comp passes all info about Metamask to "Morlais Provider", The Morlais provider passes it down to all the moralis components inside Morlais provider tags.
     const chainId = parseInt(chainIdHex)
-    // console.log(`ChainId is ${chainId}`)
+    console.log(`ChainId is ${chainId}`)
+    console.log(`ChainId is contractAddresses ? ${chainId in contractAddresses}`)
     const raffleAddress = chainId in contractAddresses ? contractAddresses[chainId][0] : null
-
+    console.log(`RaffleAddress is ${raffleAddress}`)
     // State hooks
     // https://stackoverflow.com/questions/58252454/react-hooks-using-usestate-vs-just-variables
     const [entranceFee, setEntranceFee] = useState("0")
@@ -72,6 +73,7 @@ export default function LotteryEntrance() {
         const entranceFeeFromCall = (await getEntranceFee()).toString()
         const numPlayersFromCall = (await getPlayersNumber()).toString()
         const recentWinnerFromCall = await getRecentWinner()
+        console.log(`number of player ${numPlayersFromCall}`)
         setEntranceFee(entranceFeeFromCall)
         setNumberOfPlayers(numPlayersFromCall)
         setRecentWinner(recentWinnerFromCall)

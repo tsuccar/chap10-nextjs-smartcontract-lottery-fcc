@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 // import  ManualHeader  from '../Components/ManualHeader'
 import Header from "../Components/Header"
-import LotteryEnterance from '../Components/LotteryEntrance'
+import LotteryEntrance from '../Components/LotteryEntrance'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       {/* <ManualHeader/> */}
       <Header/>
-      <LotteryEnterance/>
+      <LotteryEntrance/>
     </div>
   )
 }
