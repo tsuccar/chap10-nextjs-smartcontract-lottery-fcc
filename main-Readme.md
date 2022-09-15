@@ -62,6 +62,10 @@ IPFS just hosts static files and it's not a compute. (eg. it won't be able to do
 `yarn next export`  to build static code in `./out` folder. we will need to import this in IPFS. Grab CID
 got to browser a ipfs://QmeYuPMFUgkJ8gck1VZygmqnr7rtRrMhpFwZuebXg3ZYVc. Viola  (This is maual way of add to IPFS)
 
+ compile warnings ?? `NextJS: Can't resolve 'magic-sdk' and '@walletconnect/web3-provider'`
+    install `yarn add magic-sdk @walletconnect/web3-provider @web3auth/web3auth`
+    solution from : https://lightrun.com/answers/moralisweb3-react-moralis-nextjs-cant-resolve-magic-sdk-and-walletconnectweb3-provider
+
                     /// Fleek.co to upload programatically & helps with auto pinning of our data on other nodes///
 - Run `yarn build` 
 - Run  `yarn next export`                    
