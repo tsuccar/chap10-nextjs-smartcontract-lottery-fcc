@@ -63,3 +63,4 @@ IPFS just hosts static files and it's not a compute. (eg. it won't be able to do
 got to browser a ipfs://QmeYuPMFUgkJ8gck1VZygmqnr7rtRrMhpFwZuebXg3ZYVc. Viola  (This is maual way of add to IPFS)
 
                     /// Fleek.co to upload programatically & helps with auto pinning of our data on other nodes///
+- Build command in fleek `yarn. && yarn run build && yarn run export`
